@@ -80,11 +80,36 @@ const handleProceed = () => {
           <h1 className="text-2xl font-bold">CertVerify</h1>
         </div>
         <nav className="flex-1 space-y-4">
-          <a className="block hover:bg-blue-700 px-3 py-2 rounded-lg">Progress</a>
-          <a className="block hover:bg-blue-700 px-3 py-2 rounded-lg">Upload</a>
-          <a className="block hover:bg-blue-700 px-3 py-2 rounded-lg">Extract</a>
-          <a className="block hover:bg-blue-700 px-3 py-2 rounded-lg">Validate</a>
-          <a className="block hover:bg-blue-700 px-3 py-2 rounded-lg">Help</a>
+          <button
+            onClick={() => navigate("/progress")}
+            className="block text-left w-full hover:bg-blue-700 px-3 py-2 rounded-lg"
+          >
+            Progress
+          </button>
+          <button
+            onClick={() => navigate("/upload")}
+            className="block text-left w-full hover:bg-blue-700 px-3 py-2 rounded-lg"
+          >
+            Upload
+          </button>
+          <button
+            onClick={() => navigate("/ocr-preview")}
+            className="block text-left w-full hover:bg-blue-700 px-3 py-2 rounded-lg"
+          >
+            Extract
+          </button>
+          <button
+            onClick={() => navigate("/verify")}
+            className="block text-left w-full hover:bg-blue-700 px-3 py-2 rounded-lg"
+          >
+            Validate
+          </button>
+          <button
+            onClick={() => navigate("/help")}
+            className="block text-left w-full hover:bg-blue-700 px-3 py-2 rounded-lg"
+          >
+            Help
+          </button>
         </nav>
       </aside>
 

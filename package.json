@@ -15,13 +15,14 @@
     "react-dom": "^19.1.1",
     "react-icons": "^5.5.0",
     "react-router-dom": "^7.8.2",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "recharts": "^3.2.0",
     "tailwind-variants": "^3.1.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "cross-env NODE_OPTIONS=--no-deprecation GENERATE_SOURCEMAP=false react-scripts start",
+    "start:quiet": "cross-env NODE_OPTIONS=--no-deprecation react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -46,6 +47,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
+    "cross-env": "^10.0.0",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.17"
   }
